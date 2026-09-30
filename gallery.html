@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | Нижний Новгород</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Нижний Новгород</h1>
+            <p>Карман России & Картина Волги</p>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="attractions.html">Достопримечательности</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="history.html">История</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Галерея города</h2>
+        <p class="gallery-desc">Красивые виды Нижнего Новгорода — нажми на фото для увеличения</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" data-index="0">
+                <img src="images/kremlin.jpg" alt="Нижегородский кремль" onerror="this.src='https://via.placeholder.com/400x250?text=Кремль'">
+                <p>Нижегородский кремль</p>
+            </div>
+            <div class="gallery-item" data-index="1">
+                <img src="images/chkalov.jpg" alt="Чкаловская лестница" onerror="this.src='https://via.placeholder.com/400x250?text=Чкаловская+лестница'">
+                <p>Чкаловская лестница</p>
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img src="images/rozhdestvenskaya.jpg" alt="Рождественская улица" onerror="this.src='https://via.placeholder.com/400x250?text=Рождественская+улица'">
+                <p>Улица Рождественская</p>
+            </div>
+            <div class="gallery-item" data-index="3">
+                <img src="images/fair.jpg" alt="Нижегородская ярмарка" onerror="this.src='https://via.placeholder.com/400x250?text=Ярмарка'">
+                <p>Нижегородская ярмарка</p>
+            </div>
+            <div class="gallery-item" data-index="4">
+                <img src="images/embankment.jpg" alt="Нижневолжская набережная" onerror="this.src='https://via.placeholder.com/400x250?text=Набережная'">
+                <p>Нижневолжская набережная</p>
+            </div>
+            <div class="gallery-item" data-index="5">
+                <img src="images/kremlin-night.jpg" alt="Кремль ночью" onerror="this.src='https://via.placeholder.com/400x250?text=Кремль+ночью'">
+                <p>Кремль в вечерней подсветке</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ГАЛЕРЕИ (лупа) -->
+    <div id="gallery-modal" class="modal gallery-modal">
+        <div class="modal-content gallery-modal-content">
+            <span class="modal-close gallery-close">&times;</span>
+            <div class="gallery-viewer">
+                <button class="gallery-nav prev-gallery">❮</button>
+                <img id="gallery-modal-img" src="" alt="Увеличенное фото">
+                <button class="gallery-nav next-gallery">❯</button>
+            </div>
+            <p id="gallery-modal-caption" class="gallery-caption"></p>
+            <div class="gallery-modal-dots"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Студентка ИС-24-2 Фионина Виктория. 2026. Проект по "Обеспечение качества функционирования компьютерных систем" Корнеев М.Д.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
